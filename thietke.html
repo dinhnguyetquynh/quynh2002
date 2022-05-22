@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../33_webnuochoa/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../33_webnuochoa/bootstrap.min.css">
+
+    <script src="../33_webnuochoa/bootstrap.min.js"></script>
+    <script src="../33_webnuochoa/index.js"></script>
+    <title>DaisyForYou</title>
+    <style>
+        p {
+            text-align: center;
+            color: coral;
+            font-size: 50px;
+            font-weight: 700;
+            font-style: italic;
+            font-family: cursive;
+        }
+        
+        #header {
+            padding: 10px 60px 100px 150px;
+        }
+        
+        #nav {
+            position: absolute;
+            left: 50px;
+            bottom: 200px;
+            display: inline;
+            list-style: none;
+        }
+        
+        .menu li {
+            display: inline;
+            color: chocolate;
+            font-size: 20px;
+            padding: 0px 40px;
+        }
+        
+        #search {
+            padding: 0px 100px 50px 500px;
+        }
+        
+        #fl {
+            text-align: center;
+        }
+        
+        section {
+            background-color: bisque;
+        }
+        
+        footer {
+            background-color: lightskyblue;
+        }
+        
+        button {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="header">
+            <img src="../33_webnuochoa/hoa.jpg" width=1000px height=300px>
+            <p text-align="center"> PERFURM FOR YOU</p>
+
+        </div>
+        <div id="nav">
+            <ul class="menu">
+                <li><a href="#" id="btn1">Đăng nhập </a></li>
+                <li><a href="#" id="btn2">Đăng ký  </a></li>
+                <li><a href="../33_webnuochoa/gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="../33_webnuochoa/sanpham.html">Sản Phẩm</a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="../33_webnuochoa/chitiet.html">Chi tiết sản phẩm</a></li>
+
+
+            </ul>
+        </div>
+
+        <div id="search">
+            <form action="">
+                <input type="Search" id="txtSearch" placeholder="Search the site..." size="40">
+                <button>TÌM KIẾM</button>
+            </form>
+        </div>
+
+
+
+    </section>
+    <footer>
+        <div>
+            <p> Where to buy</p>
+            <ul class="menu-parent">
+
+                <li><a href="">VietNam</a>
+                    <ul class="menu-child">
+                        <li><a href="">14 Nguyen Van Bao Go Vap</a></li>
+                        <li><a href="">137 Vo Thi Sau Quan 1</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            <div id="fl">
+                Contact for us Facebook or Instagram
+                <li><a href="#">Instagram: DaisyForYou29</a></li>
+                <li><a href="#">FaceBook: Daisy For You</a></li>
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal " role="dialog" id="myModal">
+        <div class="modal-dialog" style="margin-top:10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" style="margin-top:10px;">
+
+                        <label for="Name" class="control-label col-xs-3">Họ Tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+                        <label for="SDT" class="control-label col-xs-3">Số Điện Thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="SDT" class="form-control">
+                            <span class="text-danger" id="tbSDT" style="color:red ">*</span>
+                        </div>
+                        <label for="DC" class="control-label col-xs-3">Địa chỉ</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="DC" class="form-control">
+                            <span class="text-danger" id="tbDc" style="color:red ">*</span>
+                        </div>
+                        <div class="col-xs-8">
+                            <h4 style="text-align:center;">THÔNG TIN ĐĂNG KÍ </h4>
+                            <table class="table table-striped" role="table" id="danhSach">
+                                <tr>
+
+                                    <th>Họ tên</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Địa chỉ</th>
+
+
+                                </tr>
+                            </table>
+                        </div>
+                        <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color:white ; background-color:green;width:50px ">Lưu</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
